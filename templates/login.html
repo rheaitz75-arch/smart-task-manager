@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <div style="display:flex; justify-content:center; align-items:center; min-height:90vh;">
+
+        <div class="glass-card" style="width:420px;">
+
+            <div style="text-align:center; margin-bottom:30px;">
+
+                <h1 style="font-size:36px;">Welcome Back</h1>
+
+                <p style="opacity:0.7;">
+                    Login to continue managing your tasks
+                </p>
+
+            </div>
+
+            <form method="POST">
+
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <input 
+                    type="password" 
+                    name="password" 
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit" class="btn-custom" style="width:100%;">
+                    Login
+                </button>
+
+            </form>
+
+            <div style="margin-top:25px; text-align:center;">
+
+                <p>
+                    Don’t have an account?
+                </p>
+
+                <a 
+                    href="/register"
+                    style="
+                        color:#38bdf8;
+                        text-decoration:none;
+                        font-weight:600;
+                    "
+                >
+                    Create Account
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
